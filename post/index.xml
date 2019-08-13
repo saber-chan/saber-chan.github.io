@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on My New Hugo Site</title>
+    <title>Posts on Blog</title>
     <link>http://saber-chan.github.io/post/</link>
-    <description>Recent content in Posts on My New Hugo Site</description>
+    <description>Recent content in Posts on Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 13 Aug 2019 14:04:55 +0800</lastBuildDate>
@@ -13,10 +13,10 @@
     
     <item>
       <title>Myfirst</title>
-      <link>http://saber-chan.github.io/post/myfirst/</link>
+      <link>http://saber-chan.github.io/2019/08/13/myfirst/</link>
       <pubDate>Tue, 13 Aug 2019 14:04:55 +0800</pubDate>
       
-      <guid>http://saber-chan.github.io/post/myfirst/</guid>
+      <guid>http://saber-chan.github.io/2019/08/13/myfirst/</guid>
       <description>hello world</description>
     </item>
     
