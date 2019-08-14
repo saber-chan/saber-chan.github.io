@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>基础数学 on Blog</title>
+    <link>https://saber-chan.github.io/categories/%E5%9F%BA%E7%A1%80%E6%95%B0%E5%AD%A6/</link>
+    <description>Recent content in 基础数学 on Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 13 Aug 2019 21:49:20 +0200</lastBuildDate>
+    
+	<atom:link href="https://saber-chan.github.io/categories/%E5%9F%BA%E7%A1%80%E6%95%B0%E5%AD%A6/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>代价函数</title>
+      <link>https://saber-chan.github.io/2019/08/13/%E4%BB%A3%E4%BB%B7%E5%87%BD%E6%95%B0/</link>
+      <pubDate>Tue, 13 Aug 2019 21:49:20 +0200</pubDate>
+      
+      <guid>https://saber-chan.github.io/2019/08/13/%E4%BB%A3%E4%BB%B7%E5%87%BD%E6%95%B0/</guid>
+      <description>&lt;p&gt;代价函数又叫损失函数、平方误差函数，是用于找到最优解的目的函数，即是将实际数据给出的值与我们拟合出的线的对应值做差，找到差值最小的为最优解。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
