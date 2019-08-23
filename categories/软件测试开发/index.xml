@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>软件测试开发 on Blog</title>
+    <link>https://saber-chan.github.io/categories/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E5%BC%80%E5%8F%91/</link>
+    <description>Recent content in 软件测试开发 on Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 18 Aug 2019 21:49:20 +0200</lastBuildDate>
+    
+	<atom:link href="https://saber-chan.github.io/categories/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E5%BC%80%E5%8F%91/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>接口测试（一）</title>
+      <link>https://saber-chan.github.io/2019/08/18/%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E4%B8%80/</link>
+      <pubDate>Sun, 18 Aug 2019 21:49:20 +0200</pubDate>
+      
+      <guid>https://saber-chan.github.io/2019/08/18/%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E4%B8%80/</guid>
+      <description>接口概念：简称API，是后台封装好</description>
+    </item>
+    
+  </channel>
+</rss>

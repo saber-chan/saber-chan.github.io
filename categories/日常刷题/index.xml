@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>日常刷题 on Blog</title>
+    <link>https://saber-chan.github.io/categories/%E6%97%A5%E5%B8%B8%E5%88%B7%E9%A2%98/</link>
+    <description>Recent content in 日常刷题 on Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 17 Aug 2019 21:49:20 +0200</lastBuildDate>
+    
+	<atom:link href="https://saber-chan.github.io/categories/%E6%97%A5%E5%B8%B8%E5%88%B7%E9%A2%98/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>linux</title>
+      <link>https://saber-chan.github.io/2019/08/17/linux/</link>
+      <pubDate>Sat, 17 Aug 2019 21:49:20 +0200</pubDate>
+      
+      <guid>https://saber-chan.github.io/2019/08/17/linux/</guid>
+      <description>1、dpkg安装的软件包要是 .deb 软件包 dpkg 是Debian package的简写，为”Debian“ 操作系统专门开发的套件管理系统，用于软件的安装、更新和移除。
+dpkg安装的软件包要是 .deb 软件包</description>
+    </item>
+    
+    <item>
+      <title>网络协议</title>
+      <link>https://saber-chan.github.io/2019/08/17/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE/</link>
+      <pubDate>Sat, 17 Aug 2019 21:49:20 +0200</pubDate>
+      
+      <guid>https://saber-chan.github.io/2019/08/17/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE/</guid>
+      <description>1、远程登录使用的协议是？ SMTP：简单邮件传送协议；
+FTP：文件传输协议；
+UDP：用户数据协议；
+TELNET:远程终端协议。
+SMTP（Simple Mail Transfer Protocol）即简单邮件传输协议，它是一组用于由源地址到目的地址传送邮件的规则，由它来控制信件的中转方式。SMTP协议属于TCP/IP协议簇。
+FTP 是File Transfer Protocol（文件传输协议）的英文简称。用于Internet上的控制文件的双向传输。同时，它也是一个应用程序。
+UDP 是User Datagram Protocol的简称， 中文名是用户数据报协议，是OSI（Open System Interconnection，开放式系统互联） 参考模型中一种无连接的传输层协议。
+Telnet协议是TCP/IP协议族中的一员，是Internet远程登陆服务的标准协议和主要方式。
+2、TCP/IP参考模型的网络层提供的是 无连接不可靠的数据报服务 TCP/IP 网络层向上只提供简单灵活的、无连接的、尽最大努力交付的数据报服务。
+如果是面向连接的，则应有用于建立连接的字段；如果提供可靠服务，则至少应有序号和检验和字段。有连接可靠的服务器有传输层的tcp提供。</description>
+    </item>
+    
+  </channel>
+</rss>

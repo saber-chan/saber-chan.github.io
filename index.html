@@ -28,7 +28,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://saber-chan.github.io/" />
 
-<meta property="og:updated_time" content="2019-08-13T21:49:20+02:00" />
+<meta property="og:updated_time" content="2019-08-20T21:49:20+02:00" />
 
     
     <meta itemprop="name" content="Blog">
@@ -73,7 +73,7 @@
           
 
           
-          <a class="main-nav-link" href="/about/">About</a>
+          <a class="main-nav-link" href="/about/">关于我</a>
           
 
           
@@ -118,7 +118,7 @@
           
 
           
-          <td><a class="main-nav-link" href="/about/">About</a></td>
+          <td><a class="main-nav-link" href="/about/">关于我</a></td>
           
 
           
@@ -154,7 +154,7 @@
       <img id="avatar" src="https://www.gravatar.com/avatar/2ea8ae26412587bf9bb756565aafadd7?s=100&d=identicon"/>
       
       <h2 id="name">una chan</h2>
-      <h3 id="title">Blogger - programmer - ai enthusiast</h3>
+      <h3 id="title">Blogger - Test development - ai enthusiast</h3>
       <span id="location"><i class="fa fa-map-marker"></i>地球</span>
       
           <a id="follow" href="https://github.com/saber-chan">
@@ -164,12 +164,12 @@
     </div>
     <div class="article-info profile-block">
       <div class="article-info-block">
-        1
+        8
         <span>帖子</span>
       </div>
       <div class="article-info-block">
         
-          1
+          6
         
         <span>
             标签
@@ -254,6 +254,886 @@
         </a>
 
         <header class="article-header">
+    <a href="https://saber-chan.github.io/2019/08/20/python-turtle/">
+    <h1 class="article-title" itemprop="name">
+        python-turtle
+    </h1>
+    </a>
+    <div class="article-meta">
+
+        
+        <div class="article-date">
+            <i class="fa fa-calendar"></i>
+            <time datetime="2019-08-20 21:49:20 &#43;0200 &#43;0200" itemprop="datePublished">2019-08-20</time>
+            &middot;
+            62
+            个字
+            &middot;
+            1
+            分钟阅读
+        </div>
+        
+        
+            
+            
+            <div class="article-category">
+                <i class="fa fa-folder"></i>
+                
+                
+                <a class="article-category-link" href="https://saber-chan.github.io/categories/python">PYTHON</a>
+                
+                
+            </div>
+            
+        
+
+        
+            
+            
+            <div class="article-category">
+                <i class="fa fa-tags"></i>
+                
+                
+                <a class="article-category-link" href="https://saber-chan.github.io/tags/python">PYTHON</a>
+                
+                
+            </div>
+            
+        
+    </div>
+</header>
+
+        <div class="article-entry" itemprop="articleBody">
+            <p>
+                <p>使用嵌套循环画出一朵花。</p>
+            </p>
+            <p class="article-more-link">
+                <a href="https://saber-chan.github.io/2019/08/20/python-turtle/">
+                    更多
+                </a>
+            </p>
+        </div>
+        <footer class="article-footer">
+    <a data-url="https://saber-chan.github.io/2019/08/20/python-turtle/" data-id="0ec51c3e49a3a1da2769a36540921838" class="article-share-link">
+        <i class="fa fa-share"></i>
+        分享
+    </a>
+    
+    <a href="https://saber-chan.github.io/2019/08/20/python-turtle/#disqus_thread" class="article-comment-link">
+        评论
+    </a>
+    
+
+    <script>
+    (function ($) {
+        
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+    </script>
+</footer>
+
+    </div>
+</article>
+
+<article class="article article-type-post" itemscope="" itemprop="blogPost">
+    <div class="article-inner">
+        
+        </a>
+
+        <header class="article-header">
+    <a href="https://saber-chan.github.io/2019/08/18/%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E4%B8%80/">
+    <h1 class="article-title" itemprop="name">
+        接口测试（一）
+    </h1>
+    </a>
+    <div class="article-meta">
+
+        
+        <div class="article-date">
+            <i class="fa fa-calendar"></i>
+            <time datetime="2019-08-18 21:49:20 &#43;0200 &#43;0200" itemprop="datePublished">2019-08-18</time>
+            &middot;
+            1
+            个字
+            &middot;
+            1
+            分钟阅读
+        </div>
+        
+        
+            
+            
+            <div class="article-category">
+                <i class="fa fa-folder"></i>
+                
+                
+                <a class="article-category-link" href="https://saber-chan.github.io/categories/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E5%BC%80%E5%8F%91">软件测试开发</a>
+                
+                
+            </div>
+            
+        
+
+        
+            
+            
+            <div class="article-category">
+                <i class="fa fa-tags"></i>
+                
+                
+                <a class="article-category-link" href="https://saber-chan.github.io/tags/%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95">接口测试</a>
+                
+                
+            </div>
+            
+        
+    </div>
+</header>
+
+        <div class="article-entry" itemprop="articleBody">
+            <p>
+                接口概念：简称API，是后台封装好
+            </p>
+            <p class="article-more-link">
+                <a href="https://saber-chan.github.io/2019/08/18/%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E4%B8%80/">
+                    更多
+                </a>
+            </p>
+        </div>
+        <footer class="article-footer">
+    <a data-url="https://saber-chan.github.io/2019/08/18/%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E4%B8%80/" data-id="a49c18a7cfc6d118da91a709d3b8f828" class="article-share-link">
+        <i class="fa fa-share"></i>
+        分享
+    </a>
+    
+    <a href="https://saber-chan.github.io/2019/08/18/%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E4%B8%80/#disqus_thread" class="article-comment-link">
+        评论
+    </a>
+    
+
+    <script>
+    (function ($) {
+        
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+    </script>
+</footer>
+
+    </div>
+</article>
+
+<article class="article article-type-post" itemscope="" itemprop="blogPost">
+    <div class="article-inner">
+        
+        </a>
+
+        <header class="article-header">
+    <a href="https://saber-chan.github.io/2019/08/17/linux/">
+    <h1 class="article-title" itemprop="name">
+        linux
+    </h1>
+    </a>
+    <div class="article-meta">
+
+        
+        <div class="article-date">
+            <i class="fa fa-calendar"></i>
+            <time datetime="2019-08-17 21:49:20 &#43;0200 &#43;0200" itemprop="datePublished">2019-08-17</time>
+            &middot;
+            10
+            个字
+            &middot;
+            1
+            分钟阅读
+        </div>
+        
+        
+            
+            
+            <div class="article-category">
+                <i class="fa fa-folder"></i>
+                
+                
+                <a class="article-category-link" href="https://saber-chan.github.io/categories/%E6%97%A5%E5%B8%B8%E5%88%B7%E9%A2%98">日常刷题</a>
+                
+                
+            </div>
+            
+        
+
+        
+            
+            
+            <div class="article-category">
+                <i class="fa fa-tags"></i>
+                
+                
+                <a class="article-category-link" href="https://saber-chan.github.io/tags/%E9%94%99%E9%A2%98%E5%8F%8A%E8%A7%A3%E6%9E%90">错题及解析</a>
+                
+                
+            </div>
+            
+        
+    </div>
+</header>
+
+        <div class="article-entry" itemprop="articleBody">
+            <p>
+                1、dpkg安装的软件包要是 .deb 软件包 dpkg 是Debian package的简写，为”Debian“ 操作系统专门开发的套件管理系统，用于软件的安装、更新和移除。
+dpkg安装的软件包要是 .deb 软件包
+            </p>
+            <p class="article-more-link">
+                <a href="https://saber-chan.github.io/2019/08/17/linux/">
+                    更多
+                </a>
+            </p>
+        </div>
+        <footer class="article-footer">
+    <a data-url="https://saber-chan.github.io/2019/08/17/linux/" data-id="b92856abe38b1e5c1173e9e1ee6fd82c" class="article-share-link">
+        <i class="fa fa-share"></i>
+        分享
+    </a>
+    
+    <a href="https://saber-chan.github.io/2019/08/17/linux/#disqus_thread" class="article-comment-link">
+        评论
+    </a>
+    
+
+    <script>
+    (function ($) {
+        
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+    </script>
+</footer>
+
+    </div>
+</article>
+
+<article class="article article-type-post" itemscope="" itemprop="blogPost">
+    <div class="article-inner">
+        
+        </a>
+
+        <header class="article-header">
+    <a href="https://saber-chan.github.io/2019/08/17/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE/">
+    <h1 class="article-title" itemprop="name">
+        网络协议
+    </h1>
+    </a>
+    <div class="article-meta">
+
+        
+        <div class="article-date">
+            <i class="fa fa-calendar"></i>
+            <time datetime="2019-08-17 21:49:20 &#43;0200 &#43;0200" itemprop="datePublished">2019-08-17</time>
+            &middot;
+            27
+            个字
+            &middot;
+            1
+            分钟阅读
+        </div>
+        
+        
+            
+            
+            <div class="article-category">
+                <i class="fa fa-folder"></i>
+                
+                
+                <a class="article-category-link" href="https://saber-chan.github.io/categories/%E6%97%A5%E5%B8%B8%E5%88%B7%E9%A2%98">日常刷题</a>
+                
+                
+            </div>
+            
+        
+
+        
+            
+            
+            <div class="article-category">
+                <i class="fa fa-tags"></i>
+                
+                
+                <a class="article-category-link" href="https://saber-chan.github.io/tags/%E9%94%99%E9%A2%98%E5%8F%8A%E8%A7%A3%E6%9E%90">错题及解析</a>
+                
+                
+            </div>
+            
+        
+    </div>
+</header>
+
+        <div class="article-entry" itemprop="articleBody">
+            <p>
+                1、远程登录使用的协议是？ SMTP：简单邮件传送协议；
+FTP：文件传输协议；
+UDP：用户数据协议；
+TELNET:远程终端协议。
+SMTP（Simple Mail Transfer Protocol）即简单邮件传输协议，它是一组用于由源地址到目的地址传送邮件的规则，由它来控制信件的中转方式。SMTP协议属于TCP/IP协议簇。
+FTP 是File Transfer Protocol（文件传输协议）的英文简称。用于Internet上的控制文件的双向传输。同时，它也是一个应用程序。
+UDP 是User Datagram Protocol的简称， 中文名是用户数据报协议，是OSI（Open System Interconnection，开放式系统互联） 参考模型中一种无连接的传输层协议。
+Telnet协议是TCP/IP协议族中的一员，是Internet远程登陆服务的标准协议和主要方式。
+2、TCP/IP参考模型的网络层提供的是 无连接不可靠的数据报服务 TCP/IP 网络层向上只提供简单灵活的、无连接的、尽最大努力交付的数据报服务。
+如果是面向连接的，则应有用于建立连接的字段；如果提供可靠服务，则至少应有序号和检验和字段。有连接可靠的服务器有传输层的tcp提供。
+            </p>
+            <p class="article-more-link">
+                <a href="https://saber-chan.github.io/2019/08/17/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE/">
+                    更多
+                </a>
+            </p>
+        </div>
+        <footer class="article-footer">
+    <a data-url="https://saber-chan.github.io/2019/08/17/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE/" data-id="4b6a3f16f7863c03eb69190f07dd152d" class="article-share-link">
+        <i class="fa fa-share"></i>
+        分享
+    </a>
+    
+    <a href="https://saber-chan.github.io/2019/08/17/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE/#disqus_thread" class="article-comment-link">
+        评论
+    </a>
+    
+
+    <script>
+    (function ($) {
+        
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+    </script>
+</footer>
+
+    </div>
+</article>
+
+<article class="article article-type-post" itemscope="" itemprop="blogPost">
+    <div class="article-inner">
+        
+        </a>
+
+        <header class="article-header">
+    <a href="https://saber-chan.github.io/2019/08/14/%E5%88%9D%E8%AF%86%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/">
+    <h1 class="article-title" itemprop="name">
+        初识人工智能
+    </h1>
+    </a>
+    <div class="article-meta">
+
+        
+        <div class="article-date">
+            <i class="fa fa-calendar"></i>
+            <time datetime="2019-08-14 21:49:20 &#43;0200 &#43;0200" itemprop="datePublished">2019-08-14</time>
+            &middot;
+            7
+            个字
+            &middot;
+            1
+            分钟阅读
+        </div>
+        
+        
+            
+            
+            <div class="article-category">
+                <i class="fa fa-folder"></i>
+                
+                
+                <a class="article-category-link" href="https://saber-chan.github.io/categories/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD">人工智能</a>
+                
+                
+            </div>
+            
+        
+
+        
+            
+            
+            <div class="article-category">
+                <i class="fa fa-tags"></i>
+                
+                
+                <a class="article-category-link" href="https://saber-chan.github.io/tags/ai">AI</a>
+                
+                
+            </div>
+            
+        
+    </div>
+</header>
+
+        <div class="article-entry" itemprop="articleBody">
+            <p>
+                <p>认识人工智能，还需要理清概念之间的关系：人工智能是一个大的概念，是让机器像人一样思考甚至超越人类；而机器学习是实现人工智能的一种方法，是使用算法来解析数据、从中学习，然后对真实世界中的事件做出决策和预测；深度学习是机器学习的一种实现方式，通过模拟人神经网络的方式来训练网络；而统计学是机器学习和神经网络的一种基础知识。</p>
+            </p>
+            <p class="article-more-link">
+                <a href="https://saber-chan.github.io/2019/08/14/%E5%88%9D%E8%AF%86%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/">
+                    更多
+                </a>
+            </p>
+        </div>
+        <footer class="article-footer">
+    <a data-url="https://saber-chan.github.io/2019/08/14/%E5%88%9D%E8%AF%86%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/" data-id="04dc496093d61f4f207567ab00959ebb" class="article-share-link">
+        <i class="fa fa-share"></i>
+        分享
+    </a>
+    
+    <a href="https://saber-chan.github.io/2019/08/14/%E5%88%9D%E8%AF%86%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/#disqus_thread" class="article-comment-link">
+        评论
+    </a>
+    
+
+    <script>
+    (function ($) {
+        
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+    </script>
+</footer>
+
+    </div>
+</article>
+
+<article class="article article-type-post" itemscope="" itemprop="blogPost">
+    <div class="article-inner">
+        
+        </a>
+
+        <header class="article-header">
+    <a href="https://saber-chan.github.io/2019/08/14/%E6%A2%AF%E5%BA%A6%E4%B8%8B%E9%99%8D/">
+    <h1 class="article-title" itemprop="name">
+        梯度下降
+    </h1>
+    </a>
+    <div class="article-meta">
+
+        
+        <div class="article-date">
+            <i class="fa fa-calendar"></i>
+            <time datetime="2019-08-14 21:49:20 &#43;0200 &#43;0200" itemprop="datePublished">2019-08-14</time>
+            &middot;
+            0
+            个字
+            &middot;
+            0
+            分钟阅读
+        </div>
+        
+        
+            
+            
+            <div class="article-category">
+                <i class="fa fa-folder"></i>
+                
+                
+                <a class="article-category-link" href="https://saber-chan.github.io/categories/%E5%9F%BA%E7%A1%80%E6%95%B0%E5%AD%A6">基础数学</a>
+                
+                
+            </div>
+            
+        
+
+        
+            
+            
+            <div class="article-category">
+                <i class="fa fa-tags"></i>
+                
+                
+                <a class="article-category-link" href="https://saber-chan.github.io/tags/%E5%8D%95%E5%8F%98%E9%87%8F%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92">单变量线性回归</a>
+                
+                
+            </div>
+            
+        
+    </div>
+</header>
+
+        <div class="article-entry" itemprop="articleBody">
+            <p>
+                
+            </p>
+            <p class="article-more-link">
+                <a href="https://saber-chan.github.io/2019/08/14/%E6%A2%AF%E5%BA%A6%E4%B8%8B%E9%99%8D/">
+                    更多
+                </a>
+            </p>
+        </div>
+        <footer class="article-footer">
+    <a data-url="https://saber-chan.github.io/2019/08/14/%E6%A2%AF%E5%BA%A6%E4%B8%8B%E9%99%8D/" data-id="906221128dad7eb01900e035c26527f0" class="article-share-link">
+        <i class="fa fa-share"></i>
+        分享
+    </a>
+    
+    <a href="https://saber-chan.github.io/2019/08/14/%E6%A2%AF%E5%BA%A6%E4%B8%8B%E9%99%8D/#disqus_thread" class="article-comment-link">
+        评论
+    </a>
+    
+
+    <script>
+    (function ($) {
+        
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+    </script>
+</footer>
+
+    </div>
+</article>
+
+<article class="article article-type-post" itemscope="" itemprop="blogPost">
+    <div class="article-inner">
+        
+        </a>
+
+        <header class="article-header">
     <a href="https://saber-chan.github.io/2019/08/13/%E4%BB%A3%E4%BB%B7%E5%87%BD%E6%95%B0/">
     <h1 class="article-title" itemprop="name">
         代价函数
@@ -294,7 +1174,7 @@
                 <i class="fa fa-tags"></i>
                 
                 
-                <a class="article-category-link" href="https://saber-chan.github.io/tags/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0">线性代数</a>
+                <a class="article-category-link" href="https://saber-chan.github.io/tags/%E5%8D%95%E5%8F%98%E9%87%8F%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92">单变量线性回归</a>
                 
                 
             </div>
@@ -393,6 +1273,144 @@
     </div>
 </article>
 
+<article class="article article-type-post" itemscope="" itemprop="blogPost">
+    <div class="article-inner">
+        
+        </a>
+
+        <header class="article-header">
+    <a href="https://saber-chan.github.io/2017/05/20/markdown-cheat-sheet/">
+    <h1 class="article-title" itemprop="name">
+        Markdown Cheat Sheet
+    </h1>
+    </a>
+    <div class="article-meta">
+
+        
+        <div class="article-date">
+            <i class="fa fa-calendar"></i>
+            <time datetime="2017-05-20 12:10:51 &#43;0200 &#43;0200" itemprop="datePublished">2017-05-20</time>
+            &middot;
+            420
+            个字
+            &middot;
+            2
+            分钟阅读
+        </div>
+        
+        
+            
+            
+        
+
+        
+            
+            
+            <div class="article-category">
+                <i class="fa fa-tags"></i>
+                
+                
+                <a class="article-category-link" href="https://saber-chan.github.io/tags/markdown">markdown</a>
+                
+                
+            </div>
+            
+        
+    </div>
+</header>
+
+        <div class="article-entry" itemprop="articleBody">
+            <p>
+                <p>This note demonstrates some of what <a href="http://daringfireball.net/projects/markdown/">Markdown</a> is capable of doing.</p>
+
+<p><em>Note: Feel free to play with this page. Unlike regular notes, this doesn&rsquo;t automatically save itself.</em></p>
+            </p>
+            <p class="article-more-link">
+                <a href="https://saber-chan.github.io/2017/05/20/markdown-cheat-sheet/">
+                    更多
+                </a>
+            </p>
+        </div>
+        <footer class="article-footer">
+    <a data-url="https://saber-chan.github.io/2017/05/20/markdown-cheat-sheet/" data-id="74a465046a917f5d40c5e9a053394724" class="article-share-link">
+        <i class="fa fa-share"></i>
+        分享
+    </a>
+    
+    <a href="https://saber-chan.github.io/2017/05/20/markdown-cheat-sheet/#disqus_thread" class="article-comment-link">
+        评论
+    </a>
+    
+
+    <script>
+    (function ($) {
+        
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+    </script>
+</footer>
+
+    </div>
+</article>
+
 
 <nav id="page-nav">
 
@@ -413,7 +1431,7 @@
             
             <li>
                 <div class="item-thumbnail">
-                    <a href="https://saber-chan.github.io/2019/08/13/%E4%BB%A3%E4%BB%B7%E5%87%BD%E6%95%B0/" class="thumbnail">
+                    <a href="https://saber-chan.github.io/2019/08/20/python-turtle/" class="thumbnail">
                     
                         <span class="thumbnail-image thumbnail-none"></span>
                     
@@ -424,15 +1442,119 @@
                     
                     <p class="item-category">
                         
-                        <a class="article-category-link" href="https://saber-chan.github.io/categories/%E5%9F%BA%E7%A1%80%E6%95%B0%E5%AD%A6">
-                        基础数学
+                        <a class="article-category-link" href="https://saber-chan.github.io/categories/python">
+                        PYTHON
                         </a>
                     </p>
                     
                     
-                    <p class="item-title"><a href="https://saber-chan.github.io/2019/08/13/%E4%BB%A3%E4%BB%B7%E5%87%BD%E6%95%B0/" class="title">代价函数</a></p>
+                    <p class="item-title"><a href="https://saber-chan.github.io/2019/08/20/python-turtle/" class="title">python-turtle</a></p>
                     <p class="item-date">
-                        <time datetime="2019-08-13 21:49:20 &#43;0200 &#43;0200" itemprop="datePublished">2019-08-13</time>
+                        <time datetime="2019-08-20 21:49:20 &#43;0200 &#43;0200" itemprop="datePublished">2019-08-20</time>
+                    </p>
+                </div>
+            </li>
+            
+            <li>
+                <div class="item-thumbnail">
+                    <a href="https://saber-chan.github.io/2019/08/18/%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E4%B8%80/" class="thumbnail">
+                    
+                        <span class="thumbnail-image thumbnail-none"></span>
+                    
+                    </a>
+                </div>
+                <div class="item-inner">
+                    
+                    
+                    <p class="item-category">
+                        
+                        <a class="article-category-link" href="https://saber-chan.github.io/categories/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E5%BC%80%E5%8F%91">
+                        软件测试开发
+                        </a>
+                    </p>
+                    
+                    
+                    <p class="item-title"><a href="https://saber-chan.github.io/2019/08/18/%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E4%B8%80/" class="title">接口测试（一）</a></p>
+                    <p class="item-date">
+                        <time datetime="2019-08-18 21:49:20 &#43;0200 &#43;0200" itemprop="datePublished">2019-08-18</time>
+                    </p>
+                </div>
+            </li>
+            
+            <li>
+                <div class="item-thumbnail">
+                    <a href="https://saber-chan.github.io/2019/08/17/linux/" class="thumbnail">
+                    
+                        <span class="thumbnail-image thumbnail-none"></span>
+                    
+                    </a>
+                </div>
+                <div class="item-inner">
+                    
+                    
+                    <p class="item-category">
+                        
+                        <a class="article-category-link" href="https://saber-chan.github.io/categories/%E6%97%A5%E5%B8%B8%E5%88%B7%E9%A2%98">
+                        日常刷题
+                        </a>
+                    </p>
+                    
+                    
+                    <p class="item-title"><a href="https://saber-chan.github.io/2019/08/17/linux/" class="title">linux</a></p>
+                    <p class="item-date">
+                        <time datetime="2019-08-17 21:49:20 &#43;0200 &#43;0200" itemprop="datePublished">2019-08-17</time>
+                    </p>
+                </div>
+            </li>
+            
+            <li>
+                <div class="item-thumbnail">
+                    <a href="https://saber-chan.github.io/2019/08/17/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE/" class="thumbnail">
+                    
+                        <span class="thumbnail-image thumbnail-none"></span>
+                    
+                    </a>
+                </div>
+                <div class="item-inner">
+                    
+                    
+                    <p class="item-category">
+                        
+                        <a class="article-category-link" href="https://saber-chan.github.io/categories/%E6%97%A5%E5%B8%B8%E5%88%B7%E9%A2%98">
+                        日常刷题
+                        </a>
+                    </p>
+                    
+                    
+                    <p class="item-title"><a href="https://saber-chan.github.io/2019/08/17/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE/" class="title">网络协议</a></p>
+                    <p class="item-date">
+                        <time datetime="2019-08-17 21:49:20 &#43;0200 &#43;0200" itemprop="datePublished">2019-08-17</time>
+                    </p>
+                </div>
+            </li>
+            
+            <li>
+                <div class="item-thumbnail">
+                    <a href="https://saber-chan.github.io/2019/08/14/%E5%88%9D%E8%AF%86%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/" class="thumbnail">
+                    
+                        <span class="thumbnail-image thumbnail-none"></span>
+                    
+                    </a>
+                </div>
+                <div class="item-inner">
+                    
+                    
+                    <p class="item-category">
+                        
+                        <a class="article-category-link" href="https://saber-chan.github.io/categories/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD">
+                        人工智能
+                        </a>
+                    </p>
+                    
+                    
+                    <p class="item-title"><a href="https://saber-chan.github.io/2019/08/14/%E5%88%9D%E8%AF%86%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/" class="title">初识人工智能</a></p>
+                    <p class="item-date">
+                        <time datetime="2019-08-14 21:49:20 &#43;0200 &#43;0200" itemprop="datePublished">2019-08-14</time>
                     </p>
                 </div>
             </li>
@@ -452,8 +1574,40 @@
             
             <li class="category-list-item">
                 
+                <a class="category-list-link" href="https://saber-chan.github.io/categories/python">
+                    python
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://saber-chan.github.io/categories/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD">
+                    人工智能
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
                 <a class="category-list-link" href="https://saber-chan.github.io/categories/%E5%9F%BA%E7%A1%80%E6%95%B0%E5%AD%A6">
                     基础数学
+                </a>
+                <span class="category-list-count">2</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://saber-chan.github.io/categories/%E6%97%A5%E5%B8%B8%E5%88%B7%E9%A2%98">
+                    日常刷题
+                </a>
+                <span class="category-list-count">2</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://saber-chan.github.io/categories/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E5%BC%80%E5%8F%91">
+                    软件测试开发
                 </a>
                 <span class="category-list-count">1</span>
             </li>
@@ -477,10 +1631,50 @@
             
             <li class="category-list-item">
                 
-                <a class="category-list-link" href="https://saber-chan.github.io/tags/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0">
-                    线性代数
+                <a class="category-list-link" href="https://saber-chan.github.io/tags/ai">
+                    ai
                 </a>
                 <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://saber-chan.github.io/tags/markdown">
+                    markdown
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://saber-chan.github.io/tags/python">
+                    python
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://saber-chan.github.io/tags/%E5%8D%95%E5%8F%98%E9%87%8F%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92">
+                    单变量线性回归
+                </a>
+                <span class="category-list-count">2</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://saber-chan.github.io/tags/%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95">
+                    接口测试
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://saber-chan.github.io/tags/%E9%94%99%E9%A2%98%E5%8F%8A%E8%A7%A3%E6%9E%90">
+                    错题及解析
+                </a>
+                <span class="category-list-count">2</span>
             </li>
             
         </ul>
@@ -500,7 +1694,22 @@
     <div class="widget tagcloud">
         
         
-        <a href="https://saber-chan.github.io/tags/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0" style="font-size: 12px;">线性代数</a>
+        <a href="https://saber-chan.github.io/tags/ai" style="font-size: 12px;">ai</a>
+        
+        
+        <a href="https://saber-chan.github.io/tags/markdown" style="font-size: 12px;">markdown</a>
+        
+        
+        <a href="https://saber-chan.github.io/tags/python" style="font-size: 12px;">python</a>
+        
+        
+        <a href="https://saber-chan.github.io/tags/%E5%8D%95%E5%8F%98%E9%87%8F%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92" style="font-size: 12px;">单变量线性回归</a>
+        
+        
+        <a href="https://saber-chan.github.io/tags/%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95" style="font-size: 12px;">接口测试</a>
+        
+        
+        <a href="https://saber-chan.github.io/tags/%E9%94%99%E9%A2%98%E5%8F%8A%E8%A7%A3%E6%9E%90" style="font-size: 12px;">错题及解析</a>
         
     </div>
 </div>
@@ -520,7 +1729,7 @@
   <div class="outer">
     <div id="footer-info" class="inner">
       &copy; 2019
-      Powered by <a href="//gohugo.io">Hugo</a>. Theme by <a href="http://github.com/ppoffice">cxb</a>.
+      Powered by <a href="//gohugo.io">Hugo</a>. Theme by cxb.
     </div>
   </div>
 </footer>
